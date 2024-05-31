@@ -1,0 +1,168 @@
+/* Apply border-box model to all elements */
+/* 1. Utilizing the Box Model: Enrich your layout using classes as selectors. At a minimum:
+    - Use border-box in all elements.
+    - Add margin, padding, and border to the body. Observe the behavior.
+    - Make the profile picture rounded, and add a border.
+    - Separate sections with margins to utilize collapsing margins. Also, use borders to space them apart. Observe the behavior.
+    - Apply padding below headers to provide spacing and ensure content doesn't feel cramped.
+    - Adjust form elements to capture the same look and feel.
+    - Remove outlines from form elements, ensuring a cleaner look. */
+/* 2. Using Comments: As before, annotate your CSS with comments for clarity and context. */
+/* Apply border-box model to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: papyrus, Arial, sans-serif;
+    border: 1px solid rgb(77, 77, 149);
+    margin: 0;
+    padding: 1px;
+    /* Gradient color scheme for the whole page */
+    background: linear-gradient(to bottom right, #00bfff, #1e90ff); /* Use a linear gradient from light blue to deep blue */
+    /* height: calc(100vh - 4px); Ensure the gradient covers the entire viewport height */
+}
+
+/* Header styling */
+.header {
+    position: relative;
+    background-color: rgb(79, 79, 214);
+    padding: 30px 0; /* Add padding at the top and bottom */
+    display: flex;
+    align-items: center;
+}
+
+.top-img {
+    margin-top: 20px;
+    margin-right: 20px; /* Increase the margin for more space between image and links */
+}
+
+.top-img img {
+    height: 170px;
+    width: 170px;
+    border: 2px solid black; /* Adjust border styling */
+    border-radius: 50%;
+}
+
+.my-name {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgb(220, 220, 34), 0 0 1em rgb(171, 212, 109), 0 0 0.2em blue;
+}
+
+
+/* Web links styling */
+.web-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align links to the left */
+    margin-top: 10px; /* Add margin between image and links */
+    text-shadow: 1px 1px 2px rgb(220, 220, 34), 0 0 1em rgb(171, 212, 109), 0 0 0.2em blue;
+}
+
+.web-links a {
+    margin-bottom: 5px;
+    color: rgb(14, 2, 2);
+    text-decoration: none;   
+}
+
+.web-links a:hover {
+    color: gold; /* Change link color on hover */
+}
+
+/* Main content styling */
+.main-content {
+    padding: 20px;
+    margin: 0 auto;
+    /* text-align: center; Center all text within the main content */
+}
+
+/* Additional section styling */
+.summary-title, .work, .education, .web, .tech, .other-title, .projects-title, .contact-title, .captains {
+    margin-top: 30px;
+    padding: 10px 0;
+    background: linear-gradient(to bottom right, #00bfff, #1e90ff); /* Apply blue gradient to section titles */
+    border-top: 1px solid rgb(77, 77, 149); /* Add a top border to separate sections */
+}
+
+/* Header titles styling */
+.summary-title h2, .work h2, .education h2, .web h2, .tech h2, .other-title h3, .projects-title h2, .contact-title h2, .captains h2 {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom right, #00bfff, #1e90ff); /* Apply blue gradient to section title backgrounds */
+    color: rgb(24, 31, 15); /* Set text color to white */
+}
+
+/* General margin for sections */
+.summary, .work, .education, .web, .tech, .other, .projects, .info, .radio-contact, .message, .captains {
+    margin-bottom: 20px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #5aabe9;
+}
+
+/* Form styling */
+.info label, .radio-contact label, .message label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(4, 8, 11); 
+}
+
+.info input[type="text"],
+.info input[type="email"],
+.radio-contact select,
+.message textarea {
+    width: 100%;
+    padding: 10px; /* Add padding for better appearance */
+    margin-bottom: 10px; /* Add some bottom margin */
+    background-color: #419ed0; /* Set background color */
+    color: #040303; /* Set text color */
+    border: none; /* Remove border */
+}
+
+/* Style the placeholder text */
+.info input[type="text"]::placeholder,
+.info input[type="email"]::placeholder,
+.radio-contact select::placeholder,
+.message textarea::placeholder {
+    color: #0b0909; /* Set placeholder text color */
+}
+
+/* Style the input fields on focus */
+.info input[type="text"]:focus,
+.info input[type="email"]:focus,
+.radio-contact select:focus,
+.message textarea:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a box shadow on focus */
+}
+
+/* Button styling */
+button {
+    background-color: rgb(79, 79, 214);
+    color: rgb(215, 221, 42);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Add a smooth transition effect */
+}
+
+button:hover {
+    background-color: rgb(59, 59, 184); /* Darken the background color on hover */
+    transform: scale(1.1); /* Scale up the button on hover */
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital CV</title>
+    <link rel="stylesheet" href="box.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-img">
+            <img src="IMG_4143.jpeg" alt="profile image">
+        </div>
+        <div class="web-links">
+            <a href="tel:+720-251-3328">Mobile: 720-251-3328</a>
+            <a href="mailto:ianscottmartin@gmail.com" target="_blank">ianscottmartin@gmail.com</a>
+            <a href="https://github.com/ianscottmartin" target="_blank">Github</a>
+            <a href="https://www.linkedin.com/in/ianscottmartin/" target="_blank">LinkedIn</a>
+        </div>
+        <h1 class="my-name">Ian Scott Martin</h1>
+        
+    </header>
+    <main class="main-content">
+        <section class="summary-title">
+            <h2>Professional Summary</h2>
+        </section>
+        <div class="summary">
+            <p>Innovative, task-driven professional with 2 years of experience in web design. Equipped with a record of success in consistently identifying and providing the technological needs of companies through ingenious innovation. Proficient in developing databases, creating user interfaces, writing and testing code, troubleshooting simple/complex issues, and implementing new features based on user feedback.</p>
+        </div>
+        <section class="work">
+            <h2>Work History</h2>
+        </section>
+        <div>
+            <ul class="companies">
+                <li>Amazon</li>
+                <li>Fieldstone Development</li>
+                <li>Denver Art Museum</li>
+                <li>University Of Wyoming</li>
+                <li>Colorado State University</li>
+                <li>OutDoor Craftsmen</li>
+            </ul>
+        </div>
+        <section class="education">
+            <h2>Education</h2>
+        </section>
+        <div>
+            <ul class="unis">
+                <li>Johannes Gutenburg University of Mainz</li>
+                <li>University of Auckland, New Zealand</li>
+                <li>University of Wales, Swansea</li>
+                <li>Colorado State University</li>
+                <li>Fort Lewis College</li>
+                <li>Colorado Mountain College</li>
+            </ul>
+        </div>
+        <section class="web">
+            <h2>Web Development</h2>
+        </section>
+        <div class="web-dev">
+            <ul>
+                <li>Kenzie Academy</li>
+                <li>Flatiron</li>
+                <li>Springboard</li>
+            </ul>
+        </div>
+        <section class="tech">
+            <h2>Technologies</h2>
+        </section>
+
+        <div class="tech-table">
+            <table>
+                <tr>
+                    <th>Technology</th>
+                    <th>Description</th>
+                    <th>Proficiency</th>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>A JavaScript Framework</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>SQLAlchemy</td>
+                    <td>SQL Toolkit and Object-Relational Mapping (ORM) Library for Python</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Data Analytics</td>
+                    <td>Process of examining data sets to draw conclusions</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Machine Learning</td>
+                    <td>Field of study that gives computers the ability to learn without being explicitly programmed</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Seaborn</td>
+                    <td>Python data visualization library</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>Matplotlib</td>
+                    <td>Comprehensive library for creating static, animated, interactive visualizations in Python</td>
+                    <td>Intermediate</td>
+                </tr>
+                <tr>
+                    <td>NumPy</td>
+                    <td>Fundamental package for scientific computing with Python</td>
+                    <td>Intermediate</td>
+                </tr>
+            </table>
+        </div>
+
+        <section class="other-title">
+            <h3>Other</h3>
+        </section>
+        <div class="other">
+            <ul>
+                <li>Github</li>
+                <li>Object-Oriented Programming</li>
+                <li>Command Line</li>
+            </ul>
+        </div>
+        <section class="projects-title">
+            <h2>Projects</h2>
+        </section>
+        <div class="projects">
+            <ul>
+                <li>Future Project1</li>
+                <li>Future Project2</li>
+                <li>Future Project3</li>
+                <li>Future Project4</li>
+            </ul>
+        </div>
+    </main>
+    <div class="contact-div">
+        <section class="contact-title">
+            <h2>More Information</h2>
+        </section>
+
+        <div>
+            <form class="info">
+                <label for="name">Enter Name:</label>
+                <input type="text" placeholder="Name" name="name" id="name">
+                <label for="email">Enter Email:</label>
+                <input type="email" placeholder="Email" name="email" id="email" required>
+            </form>
+        </div>  
+
+        <div>
+            <form>
+                <div class="radio-contact">
+                    <label for="searching-for">Industry Type:</label>
+                    <select name="searching-for" id="searching-for">
+                        <option value="select">Select</option>
+                        <option value="software-engineer">Software Engineer</option>
+                        <option value="full-stack">Full Stack</option>
+                        <option value="front-end-web-design">Front End Web Design</option>
+                    </select>
+                </div>
+
+                <div class="message">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+                    <button type="submit">Submit</button>
+                    <button type="button" onclick="document.getElementById('message').value = '';">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <section class="captains">
+            <h2>Best Star Trek Captain</h2>
+        </section>
+        <div>
+            <form>
+                <input type="checkbox" id="picard" name="best-captain" value="picard">
+                <label for="picard">Jean-Luc Picard</label><br>
+                <input type="checkbox" id="kirk" name="best-captain" value="kirk">
+                <label for="kirk">James T. Kirk</label><br>
+                <input type="checkbox" id="sisko" name="best-captain" value="sisko">
+                <label for="sisko">Benjamin Sisko</label><br>
+                <input type="checkbox" id="janeway" name="best-captain" value="janeway">
+                <label for="janeway">Kathryn Janeway</label><br>
+                <input type="checkbox" id="pike" name="best-captain" value="pike">
+                <label for="pike">Christopher Pike</label><br>
+                <input type="checkbox" id="burnham" name="best-captain" value="burnham">
+                <label for="burnham">Michael Burnham</label><br>
+                <input type="checkbox" id="saru" name="best-captain" value="saru">
+                <label for="saru">Saru</label><br>
+                <input type="checkbox" id="lorca" name="best-captain" value="lorca">
+                <label for="lorca">Gabriel Lorca</label><br>
+                <input type="checkbox" id="sulu" name="best-captain" value="sulu">
+                <label for="sulu">Hikaru Sulu</label><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
